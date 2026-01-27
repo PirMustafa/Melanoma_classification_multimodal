@@ -344,4 +344,4 @@ This project is for educational and research purposes.
 
 ## Author
 
-Data Mining Project - January 2026
+Pir Ghullam Mustafa - January 2026
