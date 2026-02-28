@@ -4,6 +4,17 @@ A multimodal deep learning approach for automated melanoma detection from dermos
 
 ---
 
+## What's New (February 2026)
+
+- **Multi-Model Ensemble**: Added EfficientNet-B3, EfficientNet-B4, and ResNeSt50 backbones
+- **Cross-Validation**: Implemented multi-fold training for robust evaluation
+- **Ensemble Predictions**: Combined predictions from multiple models for improved accuracy
+- **Updated Visualizations**: Regenerated sample images, image properties, and target distribution plots
+
+> **Note**: Model weights (`.pth` files) are excluded from git due to size constraints. Train locally or download from releases.
+
+---
+
 ## Table of Contents
 
 - [Overview](#overview)
@@ -164,8 +175,12 @@ Melanoma_classification_multimodal/
 |   |-- requirements.txt                # Python dependencies
 |
 |-- Output/
-|   |-- model_fold0.pth                 # Trained model weights
-|   |-- submission.csv                  # Kaggle submission file
+|   |-- model_fold*.pth                 # Trained model weights (not in git)
+|   |-- effnet_b3_fold*.pth             # EfficientNet-B3 weights
+|   |-- effnet_b4_fold*.pth             # EfficientNet-B4 weights
+|   |-- resnest50_fold*.pth             # ResNeSt50 weights
+|   |-- submission.csv                  # Single model submission
+|   |-- submission_ensemble.csv         # Ensemble submission
 |   |-- training_curves.png             # Training visualization
 |   |-- target_distribution.png         # Class balance plot
 |   |-- metadata_analysis.png           # Demographics analysis
@@ -344,4 +359,4 @@ This project is for educational and research purposes.
 
 ## Author
 
-Pir Ghullam Mustafa - January 2026
+Pir Ghullam Mustafa - February 2026

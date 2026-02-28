@@ -1,8 +1,8 @@
 # Data files - too large for git
 Data/
 
-# Model weights
-Output/model_fold*.pth
+# Model weights - too large for GitHub (>50MB)
+Output/*.pth
 
 # Python
 __pycache__/
